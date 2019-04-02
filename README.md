@@ -48,6 +48,15 @@ If everything correct, the result must be like this:
 
 In this moment, the test with kitchen was sucessfully completed.
 
+If you want to automatize  your test with Kitchen, just run the following commands:
+
+1-) sudo kitchen verify
+
+This command test your codes without login in the vagrant box, only via SSH. THe correct output is:
+
+![kitchen verify] (<a href="http://tinypic.com?ref=209kd43" target="_blank"><img src="http://i67.tinypic.com/209kd43.png" border="0" alt="Image and video hosting by TinyPic"></a>) 
+
+
 Now, we are validate with serverspec-init. 
 
 1-) In kitchen vagrant box on folder /tmp/kitchen/cookbooks/installpkg/recipes, run this command:
