@@ -34,7 +34,7 @@ You can ignore the warning about kitchen.yaml
 
 This command test your codes without login in the vagrant box, only via SSH. THe correct output is:
 
-![kitchen verify] (<a href="http://tinypic.com?ref=209kd43" target="_blank"><img src="http://i67.tinypic.com/209kd43.png" border="0" alt="Image and video hosting by TinyPic"></a>) 
+<a href="http://tinypic.com?ref=209kd43" target="_blank"><img src="http://i67.tinypic.com/209kd43.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 For destroy this environment:
 sudo kitchen destroy
