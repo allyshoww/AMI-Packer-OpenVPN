@@ -8,8 +8,14 @@ provisioner:
 platforms:
   - name: ubuntu-16.04
 
+verifier:
+  name: inspec 
+
 suites:
   - name: default
     run_list:
       - recipe[installpkg::default]
+    verifier:
+      inspect_tests:
+      - test/integration/default
     attributes:
