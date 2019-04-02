@@ -30,47 +30,11 @@ sudo kitchen init
 ```
 You can ignore the warning about kitchen.yaml
 
-4-) Converge for kitchen with command:
-```
-sudo kitchen converge
-```
-5-) Login in kitchen vagrant box with command:
-```
-sudo kitchen login
-```
-6-) Verify if openvpn is running with the commnand
-```
-service openvpn status
-```
-
-If everything correct, the result must be like this:
-![kitchen up and running](https://i.postimg.cc/QxsN3BBQ/kitchen.png)
-
-In this moment, the test with kitchen was sucessfully completed.
-
-If you want to automatize  your test with Kitchen, just run the following commands:
-
-1-) sudo kitchen verify
+4-) Run sudo kitchen verify. 
 
 This command test your codes without login in the vagrant box, only via SSH. THe correct output is:
 
 ![kitchen verify] (<a href="http://tinypic.com?ref=209kd43" target="_blank"><img src="http://i67.tinypic.com/209kd43.png" border="0" alt="Image and video hosting by TinyPic"></a>) 
-
-
-Now, we are validate with serverspec-init. 
-
-1-) In kitchen vagrant box on folder /tmp/kitchen/cookbooks/installpkg/recipes, run this command:
-```
-serverspec-init
-```
-and choose the option 1 (Un*x) and 2 (Exec - Local)
-
-2-) Run this command:
-```
-rspec /tmp/kitchen/cookbooks/installpkg/recipes/openvpn_spec.rb
-```
-
-If everything is correct, you receive a message informing that there were no failures.
 
 For destroy this environment:
 sudo kitchen destroy
