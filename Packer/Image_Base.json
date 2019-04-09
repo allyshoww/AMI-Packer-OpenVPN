@@ -1,0 +1,26 @@
+{ 
+     "builders": [{ 
+    "type": "amazon-ebs", 
+    "access_key": "", 
+    "secret_key": "", 
+    "region": "us-west-2", 
+    "source_ami": "ami-1e299d7e", 
+    "instance_type": "t2.micro", 
+    "ssh_username": "ec2-user", 
+    "ami_description": "Base Image - Packer",
+    "ami_name": "Base_Image_1.0.0" 
+     }],
+      "provisioners": [{
+     "type": "shell",
+     "inline": [
+          "wget https://packages.chef.io/files/stable/chefdk/3.8.14/el/7/chefdk-3.8.14-1.el7.x86_64.rpm",
+          "sudo rpm -ivh chefdk-3.8.14-1.el7.x86_64.rpm",
+          "sudo yum -y update",
+          "sudo yum install -y git wget epel-release",
+          "sudo git clone https://github.com/allysono/chef-serverspec-kitchen.git",
+          "cd chef-serverspec-kitchen",
+          "sudo chef-client -z openvpn/installpkg/recipes/default.rb"
+            
+     ]
+}]
+}

@@ -7,3 +7,11 @@ bin/*
 
 .kitchen/
 .kitchen.local.yml
+
+local-mode-cache/*
+nodes
+*.tfstate
+*.tfstate.*
+.terraform
+deploy.out
+
