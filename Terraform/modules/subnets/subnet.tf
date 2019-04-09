@@ -5,11 +5,12 @@ resource "aws_subnet" "subnet" {
   availability_zone       = "${var.az}"
 
   tags {
-    Name        = "${var.tagName}"
-    Department  = "${var.tagDepartment}"
-    Stack       = "${var.tagStack}"
+    Name       = "${var.tagName}"
+    Department = "${var.tagDepartment}"
+    Stack      = "${var.tagStack}"
   }
 }
+
 output "id" {
   value = "${aws_subnet.subnet.id}"
 }
