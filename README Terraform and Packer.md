@@ -1,12 +1,14 @@
-### TERRAFORM-PACKER-CHEF
+# TERRAFORM-PACKER-CHEF
 
 The objective of this repo is to deploy an Amazon AMI with OpenVPN installed. This package is installed with Chef and AMI is build with Packer. 
 
-###PRE-REQUISITES###
+### Prerequisites
 
+```
 1-) Packer - https://www.packer.io
 2-) Terraform - https://www.terraform.io
 3-) A AWS Access Keys and Secret Keys credentials (For this repo, you can use an IAM account with full admin access)
+```
 
 ###TO-DO
 
@@ -17,7 +19,7 @@ aws configure
 ```
 After this, clone this repo:
 ```
-git clone 
+git clone https://github.com/allysono/chef-kitchen-serverspec.git
 ```
 
 Go to folder Packer and build the image through the command:

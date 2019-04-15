@@ -28,7 +28,7 @@ git clone https://github.com/allysono/chef-kitchen-serverspec.git
 ```
 sudo kitchen init
 ```
-You can ignore the warning about kitchen.yaml
+You can ignore the warning about kitchen.yaml selecting the "N" option.
 
 4-) Run sudo kitchen verify. 
 
