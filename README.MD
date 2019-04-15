@@ -34,7 +34,7 @@ You can ignore the warning about kitchen.yaml selecting the "N" option.
 
 This command test your codes without login in the vagrant box, only via SSH. THe correct output is:
 
-![kitchen verify] (<a href="http://tinypic.com?ref=209kd43" target="_blank"><img src="http://i67.tinypic.com/209kd43.png" border="0" alt="Image and video hosting by TinyPic"></a>) 
+(<a href="http://tinypic.com?ref=209kd43" target="_blank"><img src="http://i67.tinypic.com/209kd43.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 For destroy this environment:
 sudo kitchen destroy
@@ -51,7 +51,7 @@ The objective of this repo is to deploy an Amazon AMI with OpenVPN installed. Th
 3-) A AWS Access Keys and Secret Keys credentials (For this repo, you can use an IAM account with full admin access)
 ```
 
-###TO-DO
+### TO-DO
 
 In the first moment, you have to configure your local machine to access a AWS account through the access keys/secret keys. You can input your keys in this command:
 
