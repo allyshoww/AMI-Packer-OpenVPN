@@ -64,3 +64,12 @@ module "instance" {
   tagDepartment = "TECH"
   tagStack      = "DEV"
 }
+
+output "myinstanceIP" {
+  value = "${module.instance.public_ip}"
+}
+
+output "myinstanceDNS" {
+  value = "${module.instance.public_dns}"
+}
+
