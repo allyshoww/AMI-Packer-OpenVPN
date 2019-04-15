@@ -67,9 +67,9 @@ Go to folder Packer and build the image through the command:
 ```
 sudo packer build Image.Base.json
 ```
-When the command is finished, save the AMI code with the image built with OpenVPN in Packer. Now, you need to insert your AWS Secret Key and Access key in terraform.tfvars file.
+When the command is finished, save the AMI code with the image built with OpenVPN in Packer. Now, you need to insert your AWS Secret Key and Access key in terraform.tfvars file. Save the image output (ami-xxx)
 
-Now, build an Amazon infrastructure with Terraform. Go to Terraform folder on cloned repo and type
+Now, build an Amazon infrastructure with Terraform. Go to Terraform folder on cloned repo. Edit variables.tf and insert on AMI field the ami code (ami-xxx) saved on the last step and type
 ```
 terraform init
 ```
