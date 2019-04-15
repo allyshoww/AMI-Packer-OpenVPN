@@ -13,5 +13,5 @@ nodes
 *.tfstate
 *.tfstate.*
 .terraform
-deploy.out
+deploy*.out
 
