@@ -1,5 +1,4 @@
-# chef-kitchen-serverspec
-
+# AMI-Packer-OpenVPN
 The objective of this script is to test the openvpn installed by CHEF with the tools serverspec and kitchen.
 
 Through the chef cookbook, we will install openvpn client and verify with the serverspec and kitchen if this service is up and running. 
